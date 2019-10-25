@@ -7,7 +7,7 @@ The only required inputs are the initial states of the different cells and the s
 
 Gospers glider gun
 <p algn='center'>
-    <img src='img/gospers_glider_gun.gif' />
+    <img src='img/gospers_glider_gun.gif' height="250" />
 </p>
 
 **The rules are:**
@@ -23,13 +23,13 @@ Every cell interacts with its eight neighbours, which are the cells that are hor
 
 No external Python libraries required, however `Python 3.x` is required. This simulation only works in Linux/UNIX/BSD based systems.
 
-```python
+```shell
 $ python game_of_life.py <rows> <cols> <file_name>
 ```
 
 For example to simulate the glider_gun pattern in a 25x44 cell space, run:
 
-```python
+```shell
 $ python game_of_life.py 25 44 init_patterns/glider_gun.txt
 ```
 
