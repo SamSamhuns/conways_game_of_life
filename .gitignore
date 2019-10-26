@@ -126,3 +126,6 @@ dmypy.json
 
 # Mac OS system files
 .DS_Store
+
+# Cython generated C file
+cython_build_src/c_game_of_life.c
