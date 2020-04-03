@@ -100,13 +100,13 @@ class Space:
         ''' Coord counting starts from top left [0, 0] and increases towards bottom right '''
         subprocess_call('clear', shell=False)
 
-        print(f"{'----'*self.col}-")
+        print('----'*self.col + '-')
         for i in range(self.row):
             print('| ', end='')
             for j in range(self.col):
                 print(f'{self.space[i][j]} | ', end='')
             print('')
-            print(f"{'----'*self.col}-")
+            print('----'*self.col + '-')
 
     def draw_without_grids(self):
         ''' Coord counting starts from top left [0, 0] and increases towards bottom right '''
@@ -215,7 +215,7 @@ def get_live_cells(coord_file):
 
 def initialize_live_cells(life_board, live_cell_list):
 
-    if live_cell_list == None or live_cell_list == []:
+    if live_cell_list is None or live_cell_list == []:
         raise ValueError("Live cell lists coordinates are empty")
 
     for cell in live_cell_list:

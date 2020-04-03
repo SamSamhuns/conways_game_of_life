@@ -10,7 +10,7 @@ Gospers glider gun
     <img src='img/gospers_glider_gun.gif' height="250" />
 </p>
 
-**The rules are:**
+## Rules of Game of Life
 
 Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 
@@ -75,18 +75,22 @@ The files can be in `csv` format where the live cells coordinates are given:
 
 For example, the block.csv has the format:
 
+```
     3,5
     3,6
     4,5
     4,6
+```
 
 Or the files can be in `txt` format where the live cells are represented by `O` (Big O) and dead cells by `.`:
 
 For example, the glider.txt has the format:
 
+```
     .O.
     ..O
     OOO
+```
 
 ### Acknowledgemnts
 
